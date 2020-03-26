@@ -1,5 +1,7 @@
 #SaveMyEmbed
-##This is the project of the chrome extension
+The Chrome Extension to save the showed embed.vhx.tv video content
+
+>This is the project of the chrome extension
 >Please, make a fair use and download only free licensed content
 
 ###Have Fun!
