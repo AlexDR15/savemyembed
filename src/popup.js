@@ -62,6 +62,9 @@ function fetchAPI() {
             videoFileQuality = videos[bestQualityPosition].quality;
             videoFileUrl = videos[bestQualityPosition].url;
             videoFileName = videoFileTitle+" - "+videoFileQuality+".mp4";
+            // Sanetize video name:
+            // videoFileName.replace(/[^a-z0-9\-\s\_]/gi, '_') quita casi todo (ademas de los caracteres prohibidos en nombres)
+            videoFileName = videoFileName.replace(/[\\/:*\?\"<>\|]/gi, '_');
         } else {
             consoleMsg(true, status+" -> "+xhr.response);
         }
